@@ -206,13 +206,52 @@ fieldset {
     margin-bottom: 0;
     width: 100%;
     padding: 20px 0;
-    background: #fff;
+    background: #f7f5f5;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
 }
+
+/* Set all menu text color to black */
+/* Default styling for all menu items (blue color) */
+/* Default styling for all menu items (black color) */
+/* Set all menu text color to black */
+#menu-main-menu li a {
+    color: #007bff !important; /* Ensure black text color */
+    font-size: 15px; /* Adjust font size for better readability */
+    font-weight: 600; /* Optional: Slightly bold text */
+    text-transform: uppercase; /* Optional: Convert text to uppercase */
+    padding: 10px 12px; /* Add spacing for clickable area */
+    transition: color 0.3s ease; /* Smooth hover effect */
+    background: transparent; /* Ensure no background color */
+}
+
+/* Change hover color for better user experience */
+#menu-main-menu li a:hover {
+    color: #000 !important; /* Optional: Blue hover effect */
+    text-decoration: underline; /* Optional: Underline for hover state */
+}
+
+/* Current menu item styling */
+#menu-main-menu .current-menu-item a {
+    /* color: #007bff !important;  */
+	/* Highlight current menu item in blue */ 
+}
+
+/* Optional: Ensure responsive adjustments */
+@media (max-width: 768px) {
+    #menu-main-menu li a {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        padding: 8px 10px; /* Adjust padding for compact layout */
+    }
+}
+
+
+
+
+
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
@@ -255,13 +294,15 @@ fieldset {
     padding: 10px 0;
     width: 100%;
 }
+
+
 @media only screen and (max-width:480px) { 
     .menu-top {
         color: #fff !important;
         margin-left: 0px;
     }
 }
-.navbar-default.menu-shrink li a { color: #313131!important }
+.navbar-default.menu-shrink li a { color: #0b0b0b!important }
 .navbar-default.menu-shrink li a:hover { color: #dd3333 !important }
 .navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
 .navbar-default .navbar-toggle:hover,
@@ -284,7 +325,7 @@ fieldset {
 	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2);
 	padding: 15px;  
 	left: 10px;
-	background: #f5f5f5;
+	background: #eceaea;
 	list-style: none;
   display: none;
 }
@@ -310,13 +351,17 @@ fieldset {
    display: inherit;
 }
 #navigation ul li ul.sub-menu li a {
-	color: #777!important;
 	cursor: pointer;
 	display: block;
 	padding: 10px 12px;
 	text-transform: none;
 	font-size: 14px;
 }
+#navigation ul li ul.sub-menu li a {
+    color: #000 !important; /* Black text */
+    background: #fff; /* White background */
+}
+
 #navigation ul li:hover ul.sub-menu li a:hover{
 	color: #fff!important;
 	background: #dd3333;
