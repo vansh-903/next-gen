@@ -282,7 +282,7 @@ fieldset {
 
 /* Individual Service Block */
 .single_service {
-    width: 32%; /* Three items per row */
+    width: 25% !important; /* Three items per row */
     background-color: #f9f9f9;
     padding: 30px;
     text-align: center;
@@ -315,14 +315,14 @@ fieldset {
 }
 
 .number {
-    font-size: 13px; /* Reduced font size for number */
+    font-size: 20px; /* Reduced font size for number */
     font-weight: bold;
     color: white; /* White text color for contrast */
     margin-right: 6px; /* Reduced margin */
 }
 
 .title {
-    font-size: 13px; /* Reduced font size for title */
+    font-size: 20px; /* Reduced font size for title */
     font-weight: 700;
     color: white; /* White text color for contrast */
     white-space: nowrap;
@@ -330,7 +330,7 @@ fieldset {
 
 /* Paragraph */
 .single_service p {
-    font-size: 14px; /* Reduced paragraph font size */
+    font-size: 17px; /* Reduced paragraph font size */
     color: #666;
     line-height: 1.6;
 }
@@ -1615,18 +1615,47 @@ height: 340px;
 }
 .footer_social ul li { display: inline-block }
 .footer_social ul li a {
-	background: #1f2428 none repeat scroll 0 0;
+	background: #2a2e32 none repeat scroll 0 0;
 	border: 1px solid #1f2428;
 	border-radius: 4px;
 	color: #fff;
 	display: block;
 	font-size: 14px;
-	height: 40px;
+	height: 50px !important;
 	line-height: 20px;
-	margin: 2px;
+	margin: 0px;
 	padding: 9px 12px;
 	transition: all 0.2s ease 0s;
-	width: 40px;
+	width: 50px !important;
+}
+.list-inline li { display: inline-block }
+.list-inline li a {
+	background: #2a2e32 none repeat scroll 0 0;
+	border: 1px solid #1f2428;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	height: 50px !important;
+	line-height: 20px;
+	margin: 8px;
+	padding: 6px 10px;
+	transition: all 0.2s ease 0s;
+	width: 50px !important;
+}
+
+.list-inline li a i {
+	padding: 7px 2px !important;
+
+    font-size: 30px; /* Adjust this value for smaller or larger logos */
+    line-height: 20px;
+}
+
+
+.footer_social ul li a i {
+	padding-top: 10px !important;
+    font-size: 30px; /* Adjust this value for smaller or larger logos */
+    line-height: 20px; /* Ensure proper vertical alignment */
 }
 @media only screen and (max-width:768px) { 
     .footer_social ul li a { font-size: 12px }
@@ -1636,7 +1665,7 @@ height: 340px;
 }
 .footer_social ul li a:hover { color: #fff }
 .f_facebook:hover {
-    background: #5D82D1;
+    background: #356ce3;
     border: 1px solid #5D82D1;
 }
 .f_twitter:hover {
