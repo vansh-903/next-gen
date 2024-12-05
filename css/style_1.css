@@ -385,7 +385,20 @@ fieldset {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: #fff;
 }
-.menu-top { background: rgba(0, 0, 0, 0) none repeat scroll 0 0 }
+body {
+    padding-top: 90px; /* Adjust this value based on your navbar height */
+}
+
+.menu-top {
+    position: fixed; /* Makes the navbar stay fixed at the top */
+    top: 0; /* Aligns it to the top of the page */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Makes it span the full width of the viewport */
+    z-index: 999; /* Ensures it's above other elements */
+    background-color: #fff; /* Add a background color to prevent transparency issues */
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for visual separation */
+}
+
 .menu-top li a {
     color: #fff !important;
     font-size: 12px;
@@ -647,6 +660,8 @@ video { min-width: 100% }
 	padding: 40px 20px;
 	transition: all 0.4s ease 0s;
 	text-align: center;
+	width: calc(33.33% - 30px); /* Increased width while keeping space between */
+    margin: 0 15px;
 }
 @media only screen and (max-width:768px) { 
     .single_about { margin-bottom: 40px }
@@ -1615,12 +1630,14 @@ height: 340px;
 }
 .footer_social ul li { display: inline-block }
 .footer_social ul li a {
-	background: #2a2e32 none repeat scroll 0 0;
+	background: transparent;
 	border: 1px solid #1f2428;
-	border-radius: 4px;
-	color: #fff;
-	display: block;
-	font-size: 14px;
+	border-radius: 10px;
+	color: #fff !important;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	font-size: 30px;
 	height: 50px !important;
 	line-height: 20px;
 	margin: 0px;
@@ -1630,10 +1647,10 @@ height: 340px;
 }
 .list-inline li { display: inline-block }
 .list-inline li a {
-	background: #2a2e32 none repeat scroll 0 0;
+	background: transparent;
 	border: 1px solid #1f2428;
 	border-radius: 4px;
-	color: #fff;
+	color: #fff !important;
 	display: block;
 	font-size: 20px;
 	height: 50px !important;
@@ -1646,13 +1663,14 @@ height: 340px;
 
 .list-inline li a i {
 	padding: 7px 2px !important;
-
+	color: #fff !important;
     font-size: 30px; /* Adjust this value for smaller or larger logos */
     line-height: 20px;
 }
 
 
 .footer_social ul li a i {
+	color: wheat !important;
 	padding-top: 10px !important;
     font-size: 30px; /* Adjust this value for smaller or larger logos */
     line-height: 20px; /* Ensure proper vertical alignment */
@@ -1664,34 +1682,63 @@ height: 340px;
     .footer_social ul li a { font-size: 14px }
 }
 .footer_social ul li a:hover { color: #fff }
+
+
+
+/* Twitter */
+.f_facebook {
+    background-color: #1877F2 !important; /* Facebook Blue */
+    border-radius: 10px !important;
+    color: #fff !important;
+}
+.f_twitter {
+    background-color: #1DA1F2 !important; /* Twitter Blue */
+    border-radius: 10px !important;
+    color: #fff !important;
+}
+.f_linkedin {
+    background-color: #0077B5 !important; /* LinkedIn Blue */
+    border-radius: 10px !important;
+    color: #fff !important;
+}
+.f_youtube {
+    background-color: #FF0000 !important; /* YouTube Red */
+    border-radius: 10px !important;
+    color: #fff !important;
+}
+.f_skype {
+    background-color: #00AFF0 !important; /* Skype Blue */
+    border-radius: 10px !important;
+    color: #fff !important;
+}
+
+
+
+
 .f_facebook:hover {
-    background: #356ce3;
-    border: 1px solid #5D82D1;
+    background: #356ce3 !important;
+    border: 1px solid #5D82D1 !important;
 }
 .f_twitter:hover {
-    background: #40BFF5;
-    box-shadow: 0 0 0 0px #40BFF5;
-    border: 1px solid #40BFF5;
+    background: #40BFF5 !important;
+    box-shadow: 0 0 0 0px #40BFF5 !important;
+    border: 1px solid #40BFF5 !important;
 }
-.f_google:hover {
-    background: #EB5E4C;
-    box-shadow: 0 0 0 0px #EB5E4C;
-    border: 1px solid #EB5E4C;
-}
+
 .f_linkedin:hover {
-    background: #238CC8;
-    box-shadow: 0 0 0 0px #238CC8;
-    border: 1px solid #238CC8;
+    background: #238CC8 !important;
+    box-shadow: 0 0 0 0px #238CC8 !important;
+    border: 1px solid #238CC8 !important;
 }
 .f_youtube:hover {
-    background: #CC181E;
-    box-shadow: 0 0 0 0px #CC181E;
-    border: 1px solid #CC181E;
+    background: #CC181E !important;
+    box-shadow: 0 0 0 0px #CC181E !important;
+    border: 1px solid #CC181E !important;
 }
 .f_skype:hover {
-    background: #00AFF0;
-    box-shadow: 0 0 0 0px #00AFF0;
-    border: 1px solid #00AFF0;
+    background: #00AFF0 !important;
+    box-shadow: 0 0 0 0px #00AFF0 !important;
+    border: 1px solid #00AFF0 !important;
 }
 /*END FOOTER SOCIAL DESIGN*/
 .footer_content p {
@@ -1702,6 +1749,12 @@ height: 340px;
 	margin: 0;
 	padding-top: 30px;
 }
+
+
+
+
+
+
 /*
 * ----------------------------------------------------------------------------------------
 * 18.END FOOTER DESIGN
