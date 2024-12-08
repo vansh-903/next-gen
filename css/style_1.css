@@ -282,9 +282,9 @@ fieldset {
 
 /* Individual Service Block */
 .single_service {
-    width: 25% !important; /* Three items per row */
+    width: 22% !important; /* Three items per row */ /* Three items per row */
     background-color: #f9f9f9;
-    padding: 30px;
+    padding: 23px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -315,14 +315,14 @@ fieldset {
 }
 
 .number {
-    font-size: 20px; /* Reduced font size for number */
+    font-size: 16px; /* Reduced font size for number */
     font-weight: bold;
     color: white; /* White text color for contrast */
     margin-right: 6px; /* Reduced margin */
 }
 
 .title {
-    font-size: 20px; /* Reduced font size for title */
+    font-size: 16px; /* Reduced font size for title */
     font-weight: 700;
     color: white; /* White text color for contrast */
     white-space: nowrap;
@@ -344,7 +344,7 @@ fieldset {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .single_service {
-        width: 48%; /* Two items per row on medium screens */
+        width: 23% !important; /* Two items per row on medium screens */
     }
 }
 
@@ -1137,14 +1137,14 @@ height: 340px;
 .single_team p{
 	margin-bottom: 10px;
 }
-.single_team .social_link{
+.single_team .social_link {
 	border-top: 1px solid #f0f0f0;
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 20px;
 	padding-top: 20px;	
 }
-.single_team .social_link a{
+.single_team .social_link  a{
 	border: 1px solid #f0f0f0;
 	border-radius: 40px;
 	color: #777;
@@ -1614,47 +1614,23 @@ height: 340px;
 * 18.START FOOTER DESIGN
 * ----------------------------------------------------------------------------------------
 */
-.footer {
+/* .footer {
     background-color: #171B1E;
-}
+} */
 
 .footer img { padding-bottom: 30px }
 /*START FOOTER SOCIAL DESIGN*/
-.footer_social {
+/* .footer_social {
   margin-bottom: 30px;
-}
-.footer_social ul {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
-}
-.footer_social ul li { display: inline-block }
-.footer_social ul li a {
-	background: transparent;
-	border: 1px solid #1f2428;
-	border-radius: 10px;
-	color: #fff !important;
-	display: flex;
-	justify-content: center;
-    align-items: center;
-	font-size: 30px;
-	height: 50px !important;
-	line-height: 20px;
-	margin: 0px;
-	padding: 9px 12px;
-	transition: all 0.2s ease 0s;
-	width: 50px !important;
-}
+} */
+  
+  
+
 .list-inline li { display: inline-block }
 .list-inline li a {
-	background: transparent;
-	border: 1px solid #1f2428;
-	border-radius: 4px;
+	
 	color: #fff !important;
-	display: block;
-	font-size: 20px;
 	height: 50px !important;
-	line-height: 20px;
 	margin: 8px;
 	padding: 6px 10px;
 	transition: all 0.2s ease 0s;
@@ -1663,18 +1639,134 @@ height: 340px;
 
 .list-inline li a i {
 	padding: 7px 2px !important;
-	color: #fff !important;
-    font-size: 30px; /* Adjust this value for smaller or larger logos */
+    font-size: 30px;
     line-height: 20px;
 }
 
 
-.footer_social ul li a i {
-	color: wheat !important;
-	padding-top: 10px !important;
-    font-size: 30px; /* Adjust this value for smaller or larger logos */
-    line-height: 20px; /* Ensure proper vertical alignment */
+/* .footer_social li { display: inline-block }
+.footer_social li a {
+	
+	color: #fff !important;
+	height: 50px !important;
+	margin: 8px;
+	padding: 6px 10px;
+	transition: all 0.2s ease 0s;
+	width: 50px !important;
+} */
+/* 
+.footer_social li a i {
+	padding: 7px 2px !important;
+    font-size: 30px;
+    line-height: 20px;
 }
+
+
+
+.footer_social {
+	border-top: 1px solid #f0f0f0;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 20px;
+	padding-top: 20px;	
+}
+.footer_social li a{
+	border: 1px solid #f0f0f0;
+	border-radius: 40px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	transition: .5s;
+} */
+
+
+.footer_social ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between icons */
+}
+
+.footer_social ul li {
+    display: inline-block;
+}
+
+.footer_social ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular shape */
+    background-color: #007bff; /* Default background for all icons */
+    color: white;
+    font-size: 20px; /* Icon size */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer_social ul li a:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+/* Specific social media colors */
+.footer_social ul li a.f_facebook {
+    background-color: #1877F2; /* Facebook blue */
+    color: #fff;
+}
+
+.footer_social ul li a.f_twitter {
+    background-color: #1DA1F2; /* Twitter blue */
+    color: #fff;
+}
+
+.footer_social ul li a.f_linkedin {
+    background-color: #0077B5; /* LinkedIn blue */
+    color: #fff;
+}
+
+.footer_social ul li a.f_youtube {
+    background-color: #FF0000; /* YouTube red */
+    color: #fff;
+}
+
+.footer_social ul li a.f_skype {
+    background-color: #00AFF0; /* Skype blue */
+    color: #fff;
+}
+
+/* Optional hover effects for specific platforms */
+.footer_social ul li a.f_facebook:hover {
+    background-color: #145dbf;
+}
+
+.footer_social ul li a.f_twitter:hover {
+    background-color: #0d8bc1;
+}
+
+.footer_social ul li a.f_linkedin:hover {
+    background-color: #005582;
+}
+
+.footer_social ul li a.f_youtube:hover {
+    background-color: #cc0000;
+}
+
+.footer_social ul li a.f_skype:hover {
+    background-color: #0082c9;
+}
+
+
+
+/* .footer_social ul li a i {
+	padding-top: 10px !important;
+    font-size: 30px;
+    line-height: 20px;
+} */
 @media only screen and (max-width:768px) { 
     .footer_social ul li a { font-size: 12px }
 }
@@ -1687,58 +1779,43 @@ height: 340px;
 
 /* Twitter */
 .f_facebook {
-    background-color: #1877F2 !important; /* Facebook Blue */
-    border-radius: 10px !important;
-    color: #fff !important;
+    background-color: #1877F2 !important;
 }
 .f_twitter {
-    background-color: #1DA1F2 !important; /* Twitter Blue */
-    border-radius: 10px !important;
-    color: #fff !important;
+    background: #40BFF5 !important; /* Twitter Blue */
 }
 .f_linkedin {
-    background-color: #0077B5 !important; /* LinkedIn Blue */
-    border-radius: 10px !important;
-    color: #fff !important;
+    background: #238CC8 !important; /* LinkedIn Blue */
 }
 .f_youtube {
-    background-color: #FF0000 !important; /* YouTube Red */
-    border-radius: 10px !important;
-    color: #fff !important;
+   
 }
 .f_skype {
     background-color: #00AFF0 !important; /* Skype Blue */
-    border-radius: 10px !important;
-    color: #fff !important;
 }
 
 
 
 
 .f_facebook:hover {
-    background: #356ce3 !important;
-    border: 1px solid #5D82D1 !important;
+    background: #1877F2 !important;
 }
 .f_twitter:hover {
     background: #40BFF5 !important;
-    box-shadow: 0 0 0 0px #40BFF5 !important;
-    border: 1px solid #40BFF5 !important;
+    
 }
 
 .f_linkedin:hover {
     background: #238CC8 !important;
-    box-shadow: 0 0 0 0px #238CC8 !important;
-    border: 1px solid #238CC8 !important;
+    
 }
 .f_youtube:hover {
     background: #CC181E !important;
-    box-shadow: 0 0 0 0px #CC181E !important;
-    border: 1px solid #CC181E !important;
+   
 }
 .f_skype:hover {
     background: #00AFF0 !important;
-    box-shadow: 0 0 0 0px #00AFF0 !important;
-    border: 1px solid #00AFF0 !important;
+    
 }
 /*END FOOTER SOCIAL DESIGN*/
 .footer_content p {
